@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>系统错误</title>
+</head>
+<body>
+<h3 style="color: orangered;">
+	<span style="color: red;">[{{ errno }}]</span>
+	{{ msg }}
+</h3>
+<hr>
+<ul style="font-size: 12px;">
+	{% for key,item in data %}
+		<li>
+			<span style="color: grey;min-width: 100px; display: inline-block;">{{ key }}:</span>
+			{{ item }}
+		</li>
+	{% endfor %}
+</ul>
+</body>
+</html>
